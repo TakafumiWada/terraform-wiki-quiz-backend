@@ -1,0 +1,6 @@
+*.tfvars
+*.tfstate
+*.tfstate.*
+
+.vscode
+.DS_Store
