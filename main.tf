@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("~/.config/gcloud/wiki-quiz-backend-prod-05d465b59145.json")
+  credentials = file(var.credentials)
 
   project = var.project_id
   region  = "asia-northeast1"
@@ -35,7 +35,7 @@ resource "google_app_engine_application" "app" {
 resource "google_cloudbuild_trigger" "this" {
   project = var.project_id
   trigger_template {
-    branch_name = "master"
+    branch_name = var.branch_name
     repo_name   = "wiki-quiz-backend"
   }
   filename = "cloudbuild.yaml"
