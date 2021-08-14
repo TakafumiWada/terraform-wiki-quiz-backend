@@ -2,7 +2,9 @@
 
 ## 概要
 
-[wiki-quiz-backend](https://github.com/TakafumiWada/wiki-quiz-backend)のインフラを構築するファイルです。
+[wiki-quiz-backend](https://github.com/TakafumiWada/wiki-quiz-backend)のインフラを構築するファイルです。<br>
+wiki-quiz の詳細は[こちら](https://github.com/TakafumiWada/wiki-quiz-frontend)のREADMEから
+
 
 ## クラウド構成
 
